@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Foxley Bright | Author Portfolio</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      margin: 0;
+      background: linear-gradient(135deg, #fff8e1, #ffe082);
+      color: #4e342e;
+      transition: background 0.5s ease;
+    }
+    header {
+      background-color: #ffd54f;
+      padding: 2rem;
+      text-align: center;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      transition: transform 0.3s ease;
+    }
+    header:hover {
+      transform: scale(1.02);
+    }
+    header img {
+      max-width: 200px;
+      border-radius: 10px;
+      transition: transform 0.3s ease;
+    }
+    header img:hover {
+      transform: rotate(-2deg) scale(1.05);
+    }
+    header h1 {
+      margin: 1rem 0 0.5rem;
+      font-size: 2.5rem;
+      animation: fadeIn 1s ease-out;
+    }
+    header p {
+      margin: 0;
+      font-style: italic;
+    }
+    section {
+      padding: 2rem;
+      max-width: 800px;
+      margin: auto;
+      animation: slideUp 1s ease-out;
+    }
+    h2 {
+      border-bottom: 2px solid #ffca28;
+      padding-bottom: 0.5rem;
+    }
+    footer {
+      text-align: center;
+      padding: 1rem;
+      background-color: #ffd54f;
+    }
+    a {
+      color: #d84315;
+      text-decoration: none;
+      position: relative;
+    }
+    a::after {
+      content: "";
+      position: absolute;
+      left: 0;
+      bottom: -2px;
+      width: 0%;
+      height: 2px;
+      background: #d84315;
+      transition: width 0.3s ease;
+    }
+    a:hover::after {
+      width: 100%;
+    }
+    .socials {
+      margin-top: 1rem;
+    }
+    iframe {
+      width: 100%;
+      height: 600px;
+      border: none;
+      margin-top: 1rem;
+    }
+    @keyframes fadeIn {
+      from { opacity: 0; }
+      to { opacity: 1; }
+    }
+    @keyframes slideUp {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <img src="foxley-tree.png" alt="Foxley Bright Logo" />
+    <h1>Foxley Bright</h1>
+    <p>Children's Book Author</p>
+  </header>
+
+  <section>
+    <h2>About</h2>
+    <p>Foxley Bright is a storyteller with a heart full of wonder and a pen dipped in sunshine. Inspired by nature, childhood curiosity, and the quiet magic of everyday moments, Foxley crafts tales that delight, comfort, and spark the imagination. When not writing, Foxley can often be found wandering through forests (real or imagined), always chasing the next story hidden in the rustle of leaves.</p>
+  </section>
+
+  <section>
+    <h2>Books</h2>
+    <p>See all my books on my <a href="https://www.amazon.com/author/foxleybright" target="_blank">Amazon Author Page</a>.</p>
+    <iframe src="https://www.amazon.com/author/foxleybright"></iframe>
+  </section>
+
+  <section>
+    <h2>Connect</h2>
+    <p>Follow Foxley for updates, sneak peeks, and behind-the-scenes fun:</p>
+    <div class="socials">
+      <a href="https://www.instagram.com/foxleybright/" target="_blank">Instagram</a>
+    </div>
+  </section>
+
+  <footer>
+    &copy; 2025 Foxley Bright | All rights reserved
+  </footer>
+</body>
+</html>
